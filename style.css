@@ -1,0 +1,546 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,500,300,700);
+
+* {
+    font-family: Open Sans;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+    color: black;
+}
+
+
+header {
+    padding: 20px;
+    height: 100vh;
+    text-align: start;
+     background-color: #fff;
+    color: black;
+    margin: 20px 20px 120px 20px;
+}
+
+nav {
+    background-color: #fff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    padding: 16px 150px;
+    z-index: 100;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+    padding: 10px;
+    border-radius: 5px;
+    transition: box-shadow 0.3s ease;
+}
+
+nav ul li a:focus,
+nav ul li a:active,
+section:target+nav ul li a {
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    background-color: #056b5f;
+}
+
+
+
+@media (max-width: 768px) {
+    .header-title {
+        font-size: 1.8rem;
+    }
+
+    .service-section img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+
+
+header .home {
+
+    margin-left: 10%;
+    width: 40%;
+    margin-top: 15%;
+}
+
+header .home h1 {
+    font-size: 200px;
+    font-weight: 500;
+}
+
+header .home p {
+    font-size: 1.2em;
+}
+
+header span button {
+    border: none;
+    border-radius: 109px;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin: 5px;
+    font-size: 16px;
+}
+
+header span button:first-of-type {
+    background-color: #3CAB90;
+    color: white;
+}
+
+header span button:last-of-type {
+    background-color: #FFBB1C;
+    color: #2A3334;
+}
+
+@media (max-width: 1024px) {
+    nav {
+        padding: 16px 50px;
+    }
+
+    header .home {
+        margin-left: 5%;
+        width: 70%;
+    }
+
+    .cards-section {
+        justify-content: center;
+    }
+
+    .card {
+        width: calc(50% - 20px);
+        margin-bottom: 20px;
+    }
+
+    .sec-6 .two .card {
+        width: calc(100% - 20px);
+    }
+}
+
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        align-items: center;
+        padding: 16px 30px;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    header .home {
+        margin: 0;
+        width: 90%;
+    }
+
+    .cards-section {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    nav {
+        padding: 10px 20px;
+    }
+
+    header {
+        padding: 20px 10px;
+    }
+
+    header .home h1 {
+        font-size: 1.8em;
+    }
+
+    header .home p {
+        font-size: 1em;
+    }
+
+    header span button {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+
+    .cards-section {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 90%;
+    }
+}
+
+.header-section {
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    background-color: #fff;
+    color: black;
+}
+
+.header-content {
+    width: 60%;
+    padding: 40px;
+}
+
+.header-content h1{
+    font-weight: 500;
+    font-size: 100px;
+}
+
+.header-content p{
+    font-weight: 150;
+    font-size: 20px;
+    padding: 40px 0;
+    width: 80%;
+}
+.count {
+    display: flex;
+    gap: 20px;
+    /* Adjust spacing as needed */
+    justify-content: flex-start;
+    /* Aligns spans to the left */
+    align-items: center;
+    /* Aligns text vertically in the center */
+    margin-top: 50px;
+    font-weight: 100;
+    font-size: 20px;
+}
+
+.count span{
+    margin: 40px;
+}
+
+.count h4{
+    font-weight: 300px;
+    font-size: 70px;  
+}
+
+.header-images {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.top-image img {
+    width: 100%;
+    height: auto;
+    max-width: 400px;
+    position: relative;
+    top: -150px;
+}
+
+.bottom-images {
+    position: relative;
+    width: 100%;
+    max-width: 300px;
+    top: -100px;
+}
+
+.background-image {
+    position: absolute;
+    left: -50%;
+    top: -30px;
+    z-index: 1;
+    opacity: 0.5;
+    width: 40%;
+}
+
+.middle-image {
+    position: absolute;
+    left: 10px;
+    top: -10px;
+    z-index: 2;
+    opacity: 0.8;
+    left: -42%;
+}
+
+.foreground-image {
+    position: absolute;
+    right: -30px;
+    top: 140px;
+    z-index: 3;
+    width: 35%;
+}
+
+.header-content h1,
+.header-content p,
+.header-content h4,
+.header-content span {
+    color: #333;
+}
+
+.header-content button {
+    background-color: black;
+    color: #fff;
+    padding: 10px 30px;
+    border: none;
+    cursor: pointer;
+}
+
+.header-content button:hover {
+    background-color: #555;
+}
+
+/* .services h2{
+    position: relative;
+}
+.services h2::after{
+    position: absolute;
+    content: "";
+    background-color: black;
+    width: 100px;
+    height: 3px;
+    top: 20px;
+    left: 0;
+    right: 0;
+} */
+
+/* Aligns the container and the h2 text to the left */
+.services {
+    text-align: left;
+    padding: 30px;
+    text-align: center;
+}
+.services h2 {
+    position: relative;
+    text-align: left;
+    margin-left: 0;
+    font-weight: 600;
+    padding-left: 12%; /* Adjust this value to increase spacing below the h2 text */
+}
+
+.services h2::after {
+    position: absolute;
+    content: "";
+    background-color: black;
+    width: 100px; /* Adjust width as needed */
+    height: 2px;
+    top: 40%; /* Positions the line below the h2 text */
+    left: 30px; /* Aligns the line to the left of the h2 */
+    margin-top: 5px; /* Adds extra space between the text and the line */
+}
+
+.service-section{
+    display: flex;
+    text-align: start;
+}
+
+
+.service-section p,
+.sec-3 p,
+.sec-4 p{
+    color: #333;
+    width: 80%;
+}
+
+.sec-3 h2,
+.sec-4 h2{
+    font-weight: 500;
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
+.plus{
+    border-bottom: 2px solid gainsboro;
+    padding: 10px;
+    cursor: pointer;
+}
+.icon2,
+.icon1{
+    position: relative;
+}
+
+.icon2::after,
+.icon1::after{
+    position: absolute;
+    content: "";
+    background-color: black;
+    width: 2px;
+    height: 60px;
+    top: 80px;
+    left: 40px;
+}
+.sec-4{
+    padding: 20px;
+}
+.service{
+   display: flex; 
+   text-align: start;
+}
+
+
+.sec-5{
+    position: relative;
+}
+
+.sec-5 h2{
+    font-weight: 500;
+    font-size: 50px;
+     
+}
+.layer{
+    position: absolute;
+    width: 60%;
+    top: 25%;
+    left: 23%;
+}
+
+
+
+
+
+.sec6 {
+    position: relative;
+    padding: 20px;
+}
+
+.input-wrapper {
+    position: absolute;
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+   bottom: -20%;
+}
+
+.input-wrapper input {
+    width: 100%;
+    padding: 10px 120px 10px 40px; /* Adjust padding to accommodate the icon and button */
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.input-wrapper .email-icon {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #333;
+}
+
+.input-wrapper button {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 8px 16px;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.input-wrapper button:hover {
+    background-color: #333;
+}
+
+.sec6{
+    width: 40%;
+    padding: 30px;
+}
+
+.sec6 h2{
+    font-weight: 900;
+    margin: 10px;
+}
+
+
+@media (max-width: 768px) {
+    nav {
+        padding: 16px;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    nav ul {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+    .header-section {
+        flex-direction: column;
+        text-align: center;
+    }
+    .header-title {
+        font-size: 2rem;
+    }
+    .header-content p {
+        font-size: 1rem;
+    }
+    .count {
+        flex-direction: column;
+        gap: 1rem;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .service-section {
+        margin-bottom: 20px;
+        text-align: center;
+    }
+}
+
+@media (max-width: 768px) {
+    footer .col-md-3 {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    header,
+    .sec-3,
+    .sec-4,
+    .sec-5,
+    .sec6 {
+        padding: 20px;
+    }
+    .sec-3 .container,
+    .sec-4 .container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .sec-3 h2,
+    .sec-4 h2 {
+        text-align: center;
+    }
+}
+
+@media (max-width: 768px) {
+    .header-title {
+        font-size: 2rem;
+    }
+    h2,
+    h3 {
+        font-size: 1.5rem;
+    }
+    p {
+        font-size: 1rem;
+    }
+}
